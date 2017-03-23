@@ -1,0 +1,22 @@
+{
+  "manifest_version" : 2,
+
+  "name" : "Duoling Listening",
+  "description" : "This extension hide text to force you train the listening.",
+  "version" : "0.0",
+
+  "page_action": {},
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.duolingo.com/*"],
+      "js": ["js/content-script.js"]
+    }
+  ],
+
+  "permissions" : [
+    "tabs",
+    "webNavigation",
+    "https://www.duolingo.com/*"
+  ]
+}
